@@ -1,0 +1,101 @@
+/* ==========================================================================
+           7. PACKAGES SECTION
+           ========================================================================== */
+        .packages-section {
+            padding: 60px 8% 40px 8%;
+            text-align: center;
+            background-color: #fff;
+        }
+
+        .packages-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 20px;
+        }
+
+        .package-card {
+            background: #f8f9fa;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            text-align: left;
+            border: 1px solid #e9ecef;
+        }
+
+        .package-img {
+            height: 200px;
+            overflow: hidden;
+        }
+
+        .package-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .package-info {
+            padding: 20px;
+        }
+
+        .package-meta {
+            display: flex;
+            justify-content: space-between;
+            font-size: 13px;
+            color: #6c757d;
+            margin-bottom: 10px;
+        }
+
+        .package-price {
+            font-size: 22px;
+            color: #0d6efd;
+            font-weight: bold;
+            margin-top: 15px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .btn-outline {
+            background: transparent;
+            border: 2px solid #0d6efd;
+            color: #0d6efd;
+            padding: 8px 18px;
+            border-radius: 20px;
+            cursor: pointer;
+            font-weight: bold;
+            font-size: 14px;
+            transition: all 0.3s ease;
+        }
+
+        .btn-outline:hover {
+            background: #0d6efd;
+            color: white;
+        }
+
+        .package-highlights {
+            margin-top: 16px;
+            border-top: 1px solid #dde4ee;
+            padding-top: 12px;
+            color: #495057;
+        }
+
+        .package-highlights summary {
+            font-weight: 700;
+            color: #0d6efd;
+            cursor: pointer;
+            margin-bottom: 10px;
+        }
+
+        .package-highlights ul {
+            padding-left: 18px;
+            margin: 10px 0 0;
+            line-height: 1.7;
+        }
+
+        .package-highlights p {
+            margin: 8px 0;
+            line-height: 1.6;
+            text-align: left;
+        }

@@ -1,0 +1,88 @@
+    <section class="booking-section" id="booking">
+        <h2>📅 Book Your Smart Journey</h2>
+        <p class="section-subtitle">Secure your adventure instantly. All submitted booking details are saved and visible below.</p>
+
+        <div class="booking-box">
+            <form class="booking-form" id="bookingForm">
+                <div class="form-group">
+                    <label for="fullName">Full Name</label>
+                    <input type="text" id="fullName" placeholder="Enter your full name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="emailAddress">Email Address</label>
+                    <input type="email" id="emailAddress" placeholder="Enter your email address" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="phoneNumber">Phone Number</label>
+                    <input type="tel" id="phoneNumber" placeholder="Enter your phone number" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="destination">Choose Package</label>
+                    <select id="destination" required>
+                        <option value="">-- Select an option --</option>
+                        <option value="ktm">Classic Kathmandu Exploration</option>
+                        <option value="combo">Kathmandu & Pokhara Fusion</option>
+                        <option value="pokhara">Pokhara Lakeside Escape</option>
+                        <option value="lumbini">Lumbini Spiritual Trail</option>
+                        <option value="ilam">Ilam Tea & Nature Retreat</option>
+                        <option value="badimalika">Badimalika Heritage & Scenic Expedition</option>
+                    </select>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="travelDate">Travel Date</label>
+                        <input type="date" id="travelDate" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="travelers">Travelers</label>
+                        <input type="number" id="travelers" min="1" max="10" value="1" required>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="notes">Additional Notes</label>
+                    <input type="text" id="notes" placeholder="Any preferences, room type, or special requests?">
+                </div>
+
+                <button type="submit" class="btn-submit">Confirm Package Booking</button>
+            </form>
+            <div class="booking-status" id="bookingStatus" aria-live="polite"></div>
+        </div>
+
+        <div class="booking-dashboard">
+            <div class="booking-dashboard-header">
+                <div>
+                    <h3>Customer Contract Dashboard</h3>
+                    <p class="section-subtitle">All customer booking details are saved locally in this browser and shown here for easy review.</p>
+                </div>
+                <div class="booking-dashboard-actions">
+                    <input type="search" id="bookingSearch" placeholder="Search by name, email, or package">
+                    <button type="button" id="clearBookings" class="btn-outline">Clear Records</button>
+                </div>
+            </div>
+
+            <div id="bookingEmpty" class="booking-empty">No bookings recorded yet. Submit the booking form to see the customer contract details here.</div>
+
+            <div id="bookingTableWrapper" class="booking-table-wrapper" hidden>
+                <table class="booking-table">
+                    <thead>
+                        <tr>
+                            <th>Booking ID</th>
+                            <th>Customer</th>
+                            <th>Package</th>
+                            <th>Email</th>
+                            <th>Phone</th>
+                            <th>Travel Date</th>
+                            <th>Travelers</th>
+                            <th>Contract Details</th>
+                        </tr>
+                    </thead>
+                    <tbody id="bookingTableBody"></tbody>
+                </table>
+            </div>
+        </div>
+    </section>

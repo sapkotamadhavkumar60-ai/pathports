@@ -1,0 +1,225 @@
+/* ==========================================================================
+           5. KATHMANDU HIGHLIGHTS GALLERY (GRID FORMAT)
+           ========================================================================== */
+        .kathmandu-gallery {
+            padding: 40px 8% 60px 8%;
+            text-align: center;
+        }
+
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+            margin-top: 20px;
+        }
+
+        .gallery-item {
+            position: relative;
+            border-radius: 12px;
+            overflow: hidden;
+            height: 250px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+            cursor: pointer;
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+
+        .gallery-overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: linear-gradient(transparent, rgba(0, 0, 0, 0.85));
+            color: white;
+            padding: 20px;
+            text-align: left;
+            transition: all 0.3s ease;
+        }
+
+        .gallery-item:hover img {
+            transform: scale(1.05);
+        }
+
+        .gallery-overlay h3 {
+            font-size: 20px;
+            margin-bottom: 5px;
+        }
+
+        .gallery-overlay p {
+            font-size: 13px;
+            color: #ddd;
+            opacity: 0.9;
+        }
+
+        .destination-showcase {
+            padding: 60px 8% 60px 8%;
+            text-align: center;
+            background: linear-gradient(180deg, #f8fbff 0%, #ffffff 100%);
+        }
+
+        .destination-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 24px;
+            margin-top: 24px;
+        }
+
+        .destination-card {
+            background: #fff;
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 12px 24px rgba(13, 110, 253, 0.08);
+            border: 1px solid #dce8f5;
+            text-align: left;
+        }
+
+        .destination-photo-slider {
+            position: relative;
+            height: 220px;
+            overflow: hidden;
+        }
+
+        .destination-photo-slider img {
+            position: absolute;
+            inset: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            opacity: 0;
+            transition: opacity 0.8s ease;
+        }
+
+        .destination-photo-slider img.active {
+            opacity: 1;
+        }
+
+        .destination-card-body {
+            padding: 20px;
+        }
+
+        .destination-tag {
+            display: inline-flex;
+            align-items: center;
+            padding: 6px 12px;
+            border-radius: 999px;
+            background: #e9f2ff;
+            color: #0d6efd;
+            font-size: 13px;
+            font-weight: 700;
+        }
+
+        .destination-card-body h3 {
+            font-size: 24px;
+            margin: 14px 0 8px;
+            color: #10233d;
+        }
+
+        .destination-card-body p {
+            color: #495057;
+            line-height: 1.7;
+            margin-bottom: 12px;
+        }
+
+        .destination-highlights {
+            margin: 0 0 14px;
+            padding-left: 18px;
+            color: #495057;
+            line-height: 1.7;
+        }
+
+        .destination-meta {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .destination-meta span {
+            display: inline-flex;
+            align-items: center;
+            background: #f1f7ff;
+            color: #0b5ed7;
+            border-radius: 999px;
+            padding: 6px 12px;
+            font-size: 13px;
+            font-weight: 700;
+        }
+
+        /* ==========================================================================
+           6. INTERACTIVE DETAILS MODAL POPUP
+           ========================================================================== */
+        .modal-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.7);
+            display: none;
+            justify-content: center;
+            align-items: center;
+            z-index: 3000;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .modal-box {
+            background: #ffffff;
+            width: 90%;
+            max-width: 500px;
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 15px 40px rgba(0,0,0,0.2);
+            transform: scale(0.8);
+            transition: transform 0.3s ease;
+        }
+
+        .modal-img-container {
+            height: 220px;
+            width: 100%;
+            overflow: hidden;
+        }
+
+        .modal-img-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .modal-content {
+            padding: 25px;
+        }
+
+        .modal-content h3 {
+            font-size: 24px;
+            margin-bottom: 12px;
+            color: #212529;
+        }
+
+        .modal-content p {
+            font-size: 15px;
+            color: #495057;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        .btn-close-modal {
+            background-color: #0d6efd;
+            color: #fff;
+            border: none;
+            padding: 10px 24px;
+            font-size: 14px;
+            font-weight: bold;
+            border-radius: 8px;
+            cursor: pointer;
+            float: right;
+            transition: background 0.2s;
+        }
+
+        .btn-close-modal:hover {
+            background-color: #0b5ed7;
+        }

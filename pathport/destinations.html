@@ -1,0 +1,110 @@
+    <section class="destination-showcase" id="destinations">
+        <h2>🌍 Explore Nepal’s Signature Destinations</h2>
+        <p class="section-subtitle">Rotating destination views refresh every 3 seconds, so visitors can preview each place before booking.</p>
+
+        <div class="destination-grid">
+            <article class="destination-card">
+                <div class="destination-photo-slider">
+                    <img src="images/Swayambhunath.jpg" class="active" alt="Swayambhunath hill view">
+                    <img src="images/durbarsquare.jpg" alt="Kathmandu Durbar Square">
+                    <img src="images/boudha stupa.jpg" alt="Boudhanath Stupa">
+                </div>
+                <div class="destination-card-body">
+                    <span class="destination-tag">Kathmandu</span>
+                    <h3>Kathmandu Valley</h3>
+                    <p>Kathmandu Valley mixes heritage, spiritual sites, and vibrant city life. It features Swayambhunath, Boudhanath, and Durbar Square as top attractions.</p>
+                    <ul class="destination-highlights">
+                        <li>Ancient temples and palace courtyards</li>
+                        <li>Hilltop views and sunrise panoramas</li>
+                        <li>Cultural markets, museums, and local cuisine</li>
+                    </ul>
+                    <div class="destination-meta">
+                        <span>Best for: culture & heritage</span>
+                        <span>Popular stops: 3</span>
+                    </div>
+                </div>
+            </article>
+
+            <article class="destination-card">
+                <div class="destination-photo-slider">
+                    <img src="images/pokhara.jpg" class="active" alt="Pokhara lakeside view">
+                    <img src="images/lumbini1.jpg" alt="Lumbini pilgrimage pathways">
+                    <img src="images/lumbini2.jpg" alt="Lumbini heritage site">
+                    <img src="images/lumbini3.jpg" alt="Lumbini meditation garden">
+                </div>
+                <div class="destination-card-body">
+                    <span class="destination-tag">Lumbini</span>
+                    <h3>Lumbini</h3>
+                    <p>Lumbini is the spiritual heart of Nepal, shaped by Buddhist heritage, sacred gardens, and peaceful meditation areas that guide visitors through the birthplace of Lord Buddha.</p>
+                    <ul class="destination-highlights">
+                        <li>Maya Devi Temple and sacred garden</li>
+                        <li>Ashokan Pillar and ancient pathways</li>
+                        <li>World Peace Pagoda and quiet reflection spots</li>
+                    </ul>
+                    <div class="destination-meta">
+                        <span>Best for: spirituality & culture</span>
+                        <span>Popular stops: 4</span>
+                    </div>
+                </div>
+            </article>
+
+            <article class="destination-card">
+                <div class="destination-photo-slider">
+                    <img src="images/ilam.jpg" class="active" alt="Ilam tea garden">
+                    <img src="images/ilam1.jpg" alt="Ilam ridge view">
+                    <img src="images/ilam2.jpg" alt="Ilam hillside view">
+                    <img src="images/ilam3.jpg" alt="Ilam tea estate scenery">
+                </div>
+                <div class="destination-card-body">
+                    <span class="destination-tag">Ilam</span>
+                    <h3>Ilam</h3>
+                    <p>Ilam offers cool mountain air, rolling tea hills, and scenic viewpoints. It is one of Nepal’s most peaceful retreats for nature lovers and slow travel.</p>
+                    <ul class="destination-highlights">
+                        <li>Tea estate walks and green hill trails</li>
+                        <li>Ridge viewpoints and photo routes</li>
+                        <li>Local villages and fresh tea experiences</li>
+                    </ul>
+                    <div class="destination-meta">
+                        <span>Best for: nature & slow travel</span>
+                        <span>Popular stops: 5</span>
+                    </div>
+                </div>
+            </article>
+
+            <article class="destination-card">
+                <div class="destination-photo-slider">
+                    <img src="images/Badimalika.jpg" class="active" alt="Badimalika cultural landscape">
+                    <img src="images/badimalika1.jpg" alt="Badimalika sunset trail">
+                    <img src="images/badimalika2.jpg" alt="Badimalika mountain path">
+                    <img src="images/badimalika3.jpg" alt="Badimalika heritage view">
+                </div>
+                <div class="destination-card-body">
+                    <span class="destination-tag">Badimalika</span>
+                    <h3>Badimalika</h3>
+                    <p>Badimalika in Sudurpashchim Nepal is a growing destination for clear mountain views, heritage stops, and quiet scenic exploration in western Nepal.</p>
+                    <ul class="destination-highlights">
+                        <li>Scenic ridge walks and viewpoint trails</li>
+                        <li>Local cultural encounters</li>
+                        <li>Sunrise and sunset photography</li>
+                    </ul>
+                    <div class="destination-meta">
+                        <span>Best for: heritage & scenic drives</span>
+                        <span>Popular stops: 4</span>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <div class="modal-overlay" id="infoModal" onclick="closeInfoModal(event)">
+        <div class="modal-box" onclick="event.stopPropagation()">
+            <div class="modal-img-container">
+                <img src="" id="modalImg" alt="Destination View">
+            </div>
+            <div class="modal-content">
+                <h3 id="modalTitle">Destination Title</h3>
+                <p id="modalDesc">Detailed description paragraph goes right here...</p>
+                <button class="btn-close-modal" onclick="closeInfoModal(null)">Close View</button>
+            </div>
+        </div>
+    </div>
